@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/clearRatingsButton"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:insetLeft="2dp"
+        android:insetTop="2dp"
+        android:insetRight="2dp"
+        android:insetBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:text="Clear Ratings"
+        android:textSize="6dp"
+        app:iconPadding="0dp"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnBear"
+        app:layout_constraintTop_toBottomOf="@+id/txtBearRating" />
+
+    <TextView
+        android:id="@+id/txtBearRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/yourRating"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnBear"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnBear" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/instructions"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtDogRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/yourRating"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnDog"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDog" />
+
+    <TextView
+        android:id="@+id/txtCatRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/yourRating"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnCat"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnCat" />
+
+    <TextView
+        android:id="@+id/txtRabbitRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/yourRating"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnRabbit"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnRabbit" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDog"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInstructions" />
+
+    <ImageButton
+        android:id="@+id/imgBtnCat"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInstructions" />
+
+    <ImageButton
+        android:id="@+id/imgBtnBear"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bear"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnDog"
+        app:layout_constraintTop_toBottomOf="@+id/txtDogRating" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRabbit"
+        android:layout_width="115dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rabbit"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnCat"
+        app:layout_constraintTop_toBottomOf="@+id/txtCatRating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
